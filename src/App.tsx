@@ -12,34 +12,35 @@ import ProductListPage from "./pages/ProductListPage";
 import Headernavbar from "./components/HeaderNavbar";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import FormPage from "./pages/FormPage";
 
-type Teacher = {
-  name: string;
-  job: string;
-  year: number;
-  id: number;
-};
+// type Teacher = {
+//   name: string;
+//   job: string;
+//   year: number;
+//   id: number;
+// };
 
-const teachers: Teacher[] = [
-  {
-    name: "Maulana",
-    job: "Software Engineer",
-    year: 1990,
-    id: 1,
-  },
-  {
-    name: "Asyifa",
-    job: "Full Stack Developer",
-    year: 2001,
-    id: 2,
-  },
-  {
-    name: "Budi",
-    job: "Software Engineer",
-    year: 1999,
-    id: 3,
-  },
-];
+// const teachers: Teacher[] = [
+//   {
+//     name: "Maulana",
+//     job: "Software Engineer",
+//     year: 1990,
+//     id: 1,
+//   },
+//   {
+//     name: "Asyifa",
+//     job: "Full Stack Developer",
+//     year: 2001,
+//     id: 2,
+//   },
+//   {
+//     name: "Budi",
+//     job: "Software Engineer",
+//     year: 1999,
+//     id: 3,
+//   },
+// ];
 
 // component
 function App() {
@@ -68,6 +69,9 @@ function App() {
 
         {/* Dynamic Routing */}
         <Route path="/product/:productSlug" element={<ProductDetailPage />} />
+        {/* localhost:5173/product/kaos-oblong */}
+
+        <Route path="/form" element={<FormPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
