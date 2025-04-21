@@ -13,6 +13,7 @@ import Headernavbar from "./components/HeaderNavbar";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FormPage from "./pages/FormPage";
+import RHFPage from "./pages/RHFPage";
 
 // type Teacher = {
 //   name: string;
@@ -72,6 +73,7 @@ function App() {
         {/* localhost:5173/product/kaos-oblong */}
 
         <Route path="/form" element={<FormPage />} />
+        <Route path="rhf" element={<RHFPage />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
