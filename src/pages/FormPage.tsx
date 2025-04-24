@@ -1,9 +1,9 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const FormPage = () => {
   //uncontrolled component/input
-  const inputRef = useRef<HTMLInputElement>(null);
-  const inputEmailRef = useRef<HTMLInputElement>(null);
+  // const inputRef = useRef<HTMLInputElement>(null);
+  // const inputEmailRef = useRef<HTMLInputElement>(null);
 
   //controlled component/input
   const [usernameInput, setUsernameInput] = useState("");
